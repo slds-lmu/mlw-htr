@@ -1,0 +1,26 @@
+[project]
+name = "mlw-lectiomat"
+description = "OCR System for the Medieval Latin Dictionary at the Bavarian Academy of Sciences and Humanities."
+authors = [
+    {name = "will be added upon acceptance", email = ""},
+    {name = "will be added upon acceptance", email = ""}   
+]
+license = {file = "LICENSE.md"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "omegaconf==2.3.0",
+    "opencv-python>=4.7.0.72",
+    "transformers>=4.26.1",
+    "torch>=2.0.0",
+    "numpy>=1.23.5",
+    "ultralyticsplus>=0.0.28"
+]
+version = "0.2.0"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+repository = "https://gitlab.lrz.de/ocr-projects/mlw-consulting-project"

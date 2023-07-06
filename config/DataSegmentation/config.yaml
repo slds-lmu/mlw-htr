@@ -1,0 +1,5 @@
+paths:
+  yolo_model: /home/ubuntu/mlw-consulting-project/runs/detect/train/weights/best.pt
+  source_dir: /home/ubuntu/files/MLW/
+  target_dir: /home/ubuntu/mlw-consulting-project/data/interim/lemmata_img
+  alytcs_dir: /home/ubuntu/mlw-consulting-project/data/interim/yolo_analytics

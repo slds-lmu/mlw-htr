@@ -1,0 +1,10 @@
+paths:
+  data_to_output: /home/philko/TEST_EXP_2/output
+  data_to_data_json: /mnt/win_share/MLW/data.json
+  data_to_imgs: /mnt/win_share/MLW/zettel
+  target_dir: /home/philko/Documents/Uni/WiSe2223/Consulting/mlw-consulting-project/src/DataPreparation/here
+properties:
+  max_width: 640
+  seed: 42
+  size: 500
+  t_t_p: 0.1

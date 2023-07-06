@@ -1,0 +1,46 @@
+global_config:
+  goal: train
+  debug: False
+  seed: 42
+paths:
+  tokenizer: ./models/tokenizer/MLW_Tokenizer.json
+  lemma_interim_combined: ./data/interim/lemma.txt
+  lemma_excel: data/raw/Lemmaliste.xlsx
+  datajson: ./data.json
+  lemma_datajson:
+    - ./data_train.json
+    - ./data_test.json
+  path_images: ./data/interim/lemmata_img/images
+data:
+  tr_te: 0.85
+model_configs:
+  vis_model: SWIN # TODO CHECK
+  target_folder: 'models/'
+  max_len: 32
+  model_name: 'AUG-SWIN-GPT2-ML' # TODO
+pre_training:
+  apply: True # TODO CHECK
+  decoder_path: 'models/GPT2-ML'
+  pre_train_corpus: 'data/processed/latin_words.txt'
+  per_device_train_batch_size: 192
+  per_device_eval_batch_size: 192
+  epochs: 10
+training_configs:
+  augmentation: True # TODO CHECK
+  rand_eras: False # TODO CHECK
+  rand_rota: False # TODO CHECK
+  color: False # TODO Check
+  epochs: 20 # TODO CHECK
+  run_name: MLW-OCR-SWIN-GPT2 # TODO CHECK
+  per_device_train_batch_size: 64
+  per_device_eval_batch_size: 64
+  report_to: 'mlflow'
+  save_steps: 210000
+  eval_steps: 1000
+  logging_steps: 2
+nlg:
+  max_length: 32
+  early_stopping: True
+  no_repeat_ngram_size: 3
+  length_penalty: 2.0
+  num_beams: 4
