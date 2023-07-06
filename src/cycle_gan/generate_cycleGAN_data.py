@@ -23,7 +23,7 @@ def generate_image(path: str, lemma: str) -> np.ndarray:
     """
     # sample text and font
     font = ImageFont.truetype(
-        "/home/philko/.local/share/fonts/Affectionately Yours - TTF.ttf",
+        "/home/USER/.local/share/fonts/Affectionately Yours - TTF.ttf",
         256,
         encoding="unic",
     )
@@ -118,7 +118,7 @@ def main(
     tr_ts: float = 0.9,
     test: str = "test",
     train: str = "train",
-    lemmata_img_path: str = "/home/philko/Documents/Uni/WiSe2223/Consulting/mlw-consulting-project/data/interim/lemmata_img/images",
+    lemmata_img_path: str = "/home/USER/Documents/Uni/WiSe2223/Consulting/mlw-consulting-project/data/interim/lemmata_img/images",
     seed: int = 42,
 ) -> None:
     """Execute Program.

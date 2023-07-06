@@ -2,7 +2,7 @@ library(readr)
 library(readxl)
 #synthetic_train <- read_csv("C:/Users/ru84fuj/Desktop/results/3/synthetic_train.csv")
 #benchmark <- read_excel("C:/Users/ru84fuj/Desktop/results/benchmark_own_vision_tesseract_40000.xlsx")
-benchmark <- read_excel("/home/philko/Documents/Uni/WiSe2223/Consulting/mlw-consulting-project/data/processed/all_modelen.xlsx")
+benchmark <- read_excel("/home/USER/Documents/Uni/WiSe2223/Consulting/mlw-consulting-project/data/processed/all_modelen.xlsx")
 
 
 # Custom Modifications
